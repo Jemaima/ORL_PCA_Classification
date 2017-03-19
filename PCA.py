@@ -43,7 +43,7 @@ def pca_decomposition(n_el, plot=False):
     inverse_trans_images = p.inverse_transform(reduced_images)
     if plot:
         plot_pca_params(p)
-        plot_images('Reconstructed faces', inverse_trans_images[:n1 * n2])
+        plot_images('Reduced faces', inverse_trans_images[:n1 * n2])
     return p
 
 
